@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+section header ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+section header ul li button{
+    background-color: #4584ef;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+section header ul li img{
+    height: 20px;
+    
+}
+section .main{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+}
+section .main .searchbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+section .main .searchbox .search{
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 16px;
+}
+section .main .searchbox .icons{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 12px 20px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+section .main .searchbox img{
+    height: 25px;
+}
+
+section .main .button{
+    margin-top: 20px;
+}
+section .main .button button{
+    margin: 0 5px;
+    padding: 12px 20px;
+    color: gray;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 10%;
+}
+section .main .button button:hover{
+    border: 1px solid black;
+}
+section .main .lang{
+    margin-top: 20px;
+}
+section .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: grey;
+}
+section .footer .row{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+section .footer .row ul{
+    display: flex;
+}
+section .footer .row ul li{
+    list-style: none;
+}
+section .footer .row ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    margin-right: 25px;
+}
+/* Desktop */
+@media (max-width:1024px){
+
+}
+@media (min-width:769px) and (max-width:1024px){
+    section .main .searchbox .search {
+        width: 90%;
+    }
+    section header {
+        width: 95%;
+    }
+    section header ul li button{
+        background-color: tomato;
+    }
+}
+/* mobile view */
+@media (max-width:768px){
+    section .main .searchbox .search{
+        width: 68%;
+    }
+    section .main .searchbox .icons {
+        width: 84%;
+    }
+    section .main .searchbox {
+        width: 87%;
+    }
+    section header {
+        padding-left: 4px;
+    }
+    section .footer .row ul {
+        display: block;
+    }
+    section header ul li button{
+        background-color: blue;
+    }
+}
+/* @media (min-width:502px) and (max-width:768){
+    section .main .searchbox .search {
+        width: 89%;
+        margin-left: 10px;
+    }
+    section .main .searchbox {
+        width: 78%;
+    }
+    
+} */
